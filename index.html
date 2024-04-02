@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KLV</title>
+
+  <link rel="stylesheet" href="css/estiloMobile.css">  
+
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">  
+
+</head>
+
+<body>
+
+  <header>
+
+    <a id="topo"></a>
+
+    <!-- MODAL ABERTURA -->
+
+    <div id="meuModal" class="modalInicial">
+      <div class="modal-conteudo">
+          <span class="close" onclick="fecharModal()">&times;</span>
+          <h4>Cadastre-se e ganhe 5% de desconto na primeira compra !</h4>
+
+          <form>           
+           
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" class="input" required>
+       
+            <label for="email">Email:</label>
+            <input type="text" id="email1" name="email" class="input" required>
+       
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" class="input" required>
+       
+            <label for="mensagem">Mensagem:</label>
+            <input type="text" id="mensagem" name="mensagem" class="input" required>
+       
+            <button id="enviar">Enviar</button>   
+            
+          </form>
+
+          <div id="logo-formulario"> 
+            <img src="imagens/logo/logo klv.gif" id="logo-form">
+          </div>
+      </div>
+    </div>
+
+    <!-- CIRCULO GRADIENTE -->
+
+    <div class="gradiente"></div>
+
+    <!-- MENU MOBILE -->
+    <section id="menuMobile">
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#quemSomos" onclick="closeNav()">Quem somos</a>
+        <a href="#servicos" onclick="closeNav()">Serviços</a>
+        <a href="#equipamentos" onclick="closeNav()">Equipamentos</a>
+        <a href="#beneficios" onclick="closeNav()">Benefícios</a>
+        <a href="#contato" onclick="closeNav()">Contato</a>
+      </div>
+
+      <div id="main">
+        <img src="imagens/logo/logo klv.gif" alt=""> 
+        <span id="openNav" onclick="openNav()">&#9776;</span>     
+      </div>
+
+    </section>
+
+    <!-- MENU GRANDE -->
+    
+    <section id="menuDesktop" class="container">
+      <nav class="menu">
+          <a href="#"><img id="logo" src="imagens/logo/logo klv.gif"></a>
+          <ul>
+              <a href="#quemSomos"><li class="botao">QUEM SOMOS</li></a>
+              <a href="#servicos"><li class="botao">SERVIÇOS</li></a>
+              <a href="#equipamentos"><li class="botao">EQUIPAMENTOS</li></a>
+              <a href="#beneficios"><li class="botao">BENEFÍCIOS</li></a>
+              <a href="#contato"><li class="botao">CONTATO</li></a>
+          </ul>
+          <!-- <div id="grad2"></div> -->
+        
+      </nav>
+    </section>
+    
+
+  </header>
+
+  <main class="container-main">
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    
+    <a href="#topo" class="topo-btn">&#129093;</a>
+
+
+    <!-- CARROSSEL MOBILE 320 -->
+
+    <section class="carrosselMobile">
+      <div class="slideshow-container1">
+
+        <div class="mySlides fade">
+          <img id="carrossel" src="imagens/primeiro-carrossel/carrosel.webp">
+        </div>
+        
+        <div class="mySlides fade">
+          <img id="carrossel" src="imagens/primeiro-carrossel/03.03 - Assistencia Tecnica KLV.png">
+        </div>
+        
+        <div class="mySlides fade">  
+          <img id="carrossel" src="imagens/primeiro-carrossel/klv-reverse-loja-de-informatica-3.jpeg">
+        </div>
+
+        <div class="dots" style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+      </div>
+    </section>
+      
+    
+
+    <!-- Icones REDES SOCIAIS -->
+
+    <div id="redes" class="redesSociais">
+
+      <a id="whatsapp">
+        <img src="imagens/redes/MicrosoftTeams-image.png" alt="">
+      </a>
+      <a id="instagram">
+        <img src="imagens/redes/MicrosoftTeams-image (1).png" alt="">
+      </a>
+      <a id="email">
+        <img src="imagens/redes/Email.png" alt="">
+      </a>
+
+    </div>
+
+
+    <!-- IFRAME Quem Somos -->
+
+    <a id="quemSomos"></a>  
+    <br>
+
+    <div id="titulos">
+      <h4>QUEM SOMOS</h4>
+    </div>
+
+    <section class="containerSomos">       
+
+      <div class="somos">
+          
+        <p> O grupo KLV está a mais de 12 anos no mercado em soluções de tecnologia e com o ritmo acelerado da mudança tecnológica requer atualizações nos equipamentos e com isso montamos a KLV reverse que é especializada em locação, reparos, upgrade, vendar e descarte consciente, nós trabalhamos com atendimento personalizado para você ou sua empresa.
+          
+            Desde consultoria estratégica até implementação de sistemas avançados, oferecemos um portfólio abrangente de serviços. 
+            
+            Deixe-nos mostrar como podemos otimizar processos, impulsionar a eficiência operacional e catalisar o crescimento sustentável do seu negócio.
+
+            Na KLV, estamos prontos para ser mais do que seu provedor de equipamentos; queremos ser seu parceiro de confiança em cada etapa do caminho
+          
+            Contribuímos para um mundo mais limpo e sustentável, protegendo o planeta enquanto avançamos tecnologicamente, aqui você pode descartar seu "lixo eletrônico" e ainda ter um retorno em créditos para ser utilizado em qualquer loja do nosso grupo.
+          </p>
+
+      </div>
+    </section>
+
+
+    <!-- ACORDEON SERVIÇOS -->
+
+    <a id="servicos"></a>  
+    <br>
+
+    <section id="acordeonMobile">
+      
+      <div id="titulos">
+        <h4>SERVIÇOS</h4>
+      </div>
+
+      <div class="acordeon">                       
+
+        <button class="accordion">LOCAÇÃO</button>
+        <div class="panel">
+          <p>Com a locação de computadores permite que você tenha acesso a equipamentos de última geração, sem precisar se preocupar com a depreciação. Além disso, o suporte técnico oferecido por uma empresa de locação pode ajudar a resolver problemas rapidamente, evitando interrupções no trabalho. </p>
+        </div>
+  
+        <button class="accordion">REPAROS</button>
+        <div class="panel">
+          <p>Realizamos reparos como limpeza, atualizações e otimizações para manter o computador funcionando corretamente. </p>
+        </div>
+  
+        <button class="accordion">UPGRADE</button>
+        <div class="panel">
+          <p>Melhoramos a velocidade e desempenho de seus equipamentos, podendo usar as peças trocadas para pagar parte do custo. </p>
+        </div>
+  
+        <button class="accordion">VENDAS</button>
+        <div class="panel">
+          <p>Compramos seus equipamentos que não estão mais em uso. </p>
+        </div>
+  
+        <button class="accordion">DESCARTE</button>
+        <div class="panel">
+          <p>Traga os equipamentos que não estão mais sendo usado e realizamos o descarte correntemente sem prejudicar a natureza.</p>
+        </div>
+
+      </div>
+    </section>
+      
+      
+    <!-- TAB -->
+    <a id="servicos"></a> 
+    <br>
+
+    <section id="tab">
+
+      <div id="titulos">
+        <h4>SERVIÇOS</h4>
+      </div>
+
+      <div class="containerTab">
+        <div class="tab">
+          <button class="tablinks" onclick="mostrarServicos(event, 'locacao')">Locação</button>
+          <button class="tablinks" onclick="mostrarServicos(event, 'reparos')">Reparos</button>
+          <button class="tablinks" onclick="mostrarServicos(event, 'upgrade')">Upgrade</button>
+          <button class="tablinks" onclick="mostrarServicos(event, 'vendas')">Vendas</button>
+          <button class="tablinks" onclick="mostrarServicos(event, 'descarte')">Descarte</button>
+        </div>
+            
+        <div id="locacao" class="tabcontent">
+          <p >Com a locação de computadores permite que você tenha acesso a equipamentos de última geração, sem precisar se preocupar com a depreciação. Além disso, o suporte técnico oferecido por uma empresa de locação pode ajudar a resolver problemas rapidamente, evitando interrupções no trabalho.</p>
+        </div>
+            
+        <div id="reparos" class="tabcontent">
+          <p>Realizamos reparos como limpeza, atualizações e otimizações para manter o computador funcionando corretamente. </p>
+        </div>
+            
+        <div id="upgrade" class="tabcontent">
+          <p>Melhoramos a velocidade e desempenho de seus equipamentos, podendo usar as peças trocadas para pagar parte do custo. </p>
+        </div>
+            
+        <div id="vendas" class="tabcontent">
+          <p>Na KLV Reverse, somos especialistas em oferecer soluções completas para suas necessidades de informática. Desde notebooks a PCs completos e equipamentos para jogos, como os poderosos PCs gamers, nós temos tudo o que você precisa para potencializar sua experiência digital. Além disso, disponibilizamos uma ampla gama de acessórios para complementar seu setup, garantindo que você esteja equipado com o melhor em tecnologia. Conte conosco para fornecer produtos de qualidade e um serviço excepcional, adaptado às suas demandas específicas. Seja para uso pessoal, profissional ou para mergulhar no mundo dos jogos, na KLV Reverse, estamos aqui para ajudar você a encontrar as melhores soluções em informática.</p>
+        </div>
+            
+        <div id="descarte" class="tabcontent">
+          <p>Na KLV Reverse, temos o compromisso de não apenas fornecer soluções de informática de alta qualidade, mas também de cuidar do meio ambiente. Nosso foco está no descarte responsável, reciclagem e reaproveitamento de eletrônicos. Com isso, não só ajudamos a preservar o planeta, mas também oferecemos aos nossos clientes uma oportunidade única. Ao trazer seus eletrônicos antigos para nós, não apenas os descartamos de forma ecologicamente correta, mas também oferecemos um cash back exclusivo para ser usado em nossa loja. Assim, você pode atualizar seus equipamentos tecnológicos enquanto contribui para um mundo mais sustentável. Na KLV Reverse, estamos comprometidos com você e com o meio ambiente.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- CARROSSEL CARDS MOBILE-->
+
+    <a id="equipamentos"></a>
+    <br>
+    
+    <div id="titulos">
+      <h4>EQUIPAMENTOS</h4>
+    </div>
+
+    <section class="containerCarrossel">
+      
+      <div>
+        <div class="slideshow-container">
+
+            <div class="cardCarrossel" id="myBtn">
+              <div id="imagemCarrossel">
+                <img src="imagens/segundo-carrossel/notebook/dell 01.gif">
+              </div>
+              <p>NOTEBOOKS</p>
+            </div>
+        
+            <div class="cardCarrossel" id="myBtn2">
+              <div id="imagemCarrossel">
+                <img src="imagens/segundo-carrossel/desktop/gabinete.lado.gif">
+              </div>
+              <p>DESKTOP</p>
+            </div>
+        
+            <div class="cardCarrossel" id="myBtn3">
+              <div id="imagemCarrossel">
+                <img src="imagens/segundo-carrossel/apple/mac air.gif">
+              </div>  
+              <p>APPLE</p>
+            </div>
+        
+            <div class="cardCarrossel" id="myBtn4">
+              <div id="imagemCarrossel">
+                <img src="imagens/segundo-carrossel/acessorios/Monitor.gif">
+              </div>
+              <p>ACESSÓRIOS</p>
+            </div>
+        
+            <div class="cardCarrossel" id="myBtn5">
+              <div id="imagemCarrossel">
+                <img src="imagens/segundo-carrossel/totem/totem03.gif">
+              </div>
+              <p>TOTEM</p>
+            </div>
+        
+        </div>
+      </div>
+    </section>
+
+
+
+        <!-- MODAL -->
+
+    
+    <nav id="myModal" class="modal">
+        
+        <div class="modal-content">
+            <span class="close1">&times;</span>
+            <div id="imagensModal" >
+                <img src="imagens/segundo-carrossel/notebook/dell 01.gif" alt="" id="imagensNote">
+                <img src="imagens/segundo-carrossel/notebook/dell 02.gif" alt="" id="imagensNote">
+                <img src="imagens/segundo-carrossel/notebook/dell 03.gif" alt="" id="imagensNote">
+            </div>
+
+            <h4 id="titulo-modal">Notebooks</h4>
+            <div class="modalTexto">                
+                <p>
+                    Na KLV, temos uma ampla variedade de notebooks disponíveis para atender às necessidades de todos os tipos de usuários. Desde configurações básicas até modelos de alta performance, nossa linha de produtos oferece opções para cada preferência e orçamento. Seja você um estudante que precisa de um dispositivo para suas tarefas escolares, um profissional em busca de produtividade no trabalho ou um entusiasta de tecnologia que busca desempenho extremo, nós temos o notebook ideal para você. Confira nossa seleção e encontre o dispositivo perfeito para suas necessidades na KLV.
+                </p>
+            </div>
+
+          </div>
+    </nav>
+
+    <nav id="myModal2" class="modal">
+          
+          <div class="modal-content">
+              <span class="close2">&times;</span>
+              <div id="imagensModal" >
+                  <img src="imagens/segundo-carrossel/desktop/gabinete.lado1.gif" alt="" id="imagensDesk">
+                  <img src="imagens/segundo-carrossel/desktop/gabinete.frente.gif" alt="" id="imagensDesk">
+                  <img src="imagens/segundo-carrossel/desktop/gabinete.lado.gif" alt="" id="imagensDesk">
+              </div>
+              
+              <h4 id="titulo-modal">Desktop</h4>
+              <div class="modalTexto">                  
+                  <p>
+                      Introduzindo a linha de desktops da KLV Reverse, uma coleção abrangente que foi meticulosamente
+                      projetada para atender a ampla variedade de necessidades dos nossos clientes. Na KLV Reverse,
+                      entendemos que cada usuário é único, com demandas específicas, e é por isso que desenvolvemos uma
+                      linha de desktops que oferece desempenho, confiabilidade e versatilidade incomparáveis.
+
+                      Desde os entusiastas de jogos ávidos até os profissionais de negócios em busca de soluções de
+                      produtividade, nossa linha de desktops oferece uma variedade de opções para atender a todos os
+                      requisitos. Com uma gama de processadores poderosos, placas gráficas de última geração e
+                      armazenamento expansível, nossos desktops são capazes de lidar com as tarefas mais exigentes com
+                      facilidade.
+
+                      Além disso, priorizamos a facilidade de uso e a acessibilidade em todos os nossos produtos. Nossos
+                      desktops são projetados com interfaces intuitivas e recursos de conectividade avançados para
+                      garantir uma experiência sem complicações para todos os tipos de usuários.
+
+                      Na KLV Reverse, estamos comprometidos em fornecer soluções tecnológicas que capacitam nossos
+                      clientes a alcançar seus objetivos, sejam eles relacionados ao trabalho, entretenimento ou
+                      criatividade. Descubra a linha de desktops da KLV Reverse hoje e experimente o poder e a
+                      flexibilidade que você merece
+                  </p>
+              </div>
+          </div>
+    </nav>
+
+    <nav id="myModal3" class="modal">
+          
+          <div class="modal-content">
+              <span class="close3">&times;</span>
+              <div id="imagensModal" >
+                  <img src="imagens/segundo-carrossel/acessorios/Monitor.gif" alt="" id="imagensAces">
+                  <img src="imagens/segundo-carrossel/acessorios/Mouse.gif" alt="" id="imagensAces">
+                  <img src="imagens/segundo-carrossel/acessorios/Teclado.gif" alt="" id="imagensAces">
+              </div>
+
+              <h4 id="titulo-modal">Acessórios</h4>
+              <div class="modalTexto">                  
+                  <p>
+                      Na KLV, não apenas oferecemos uma vasta linha de desktops, mas também uma ampla gama de acessórios que são cuidadosamente selecionados para atender às necessidades diversificadas dos nossos consumidores. Desde periféricos essenciais até produtos inovadores que elevam a experiência de uso, nossos acessórios foram projetados para proporcionar conveniência, funcionalidade e qualidade excepcionais.
+
+                      Seja você um jogador ávido, um profissional criativo ou alguém que busca otimizar sua produtividade, temos acessórios que atendem às suas necessidades específicas. Nossa coleção inclui teclados ergonômicos de alto desempenho, mouses precisos e confortáveis, headsets com qualidade de áudio imersiva e monitores de alta resolução para uma experiência visual deslumbrante.
+                    
+                      Além disso, entendemos a importância da conectividade e da mobilidade nos dias de hoje. É por isso que oferecemos uma variedade de acessórios como hubs USB, carregadores sem fio e mochilas para laptops, garantindo que você esteja sempre conectado e pronto para qualquer coisa, onde quer que esteja.
+                    
+                      Na KLV, nossa missão é fornecer aos nossos clientes os melhores produtos que atendam às suas necessidades e excedam suas expectativas. Explore nossa coleção de acessórios hoje e descubra como podemos ajudá-lo a elevar sua experiência tecnológica a novos patamares.
+                  </p>
+              </div>
+
+          </div>
+    </nav>      
+
+    <nav id="myModal4" class="modal">
+          
+          <div class="modal-content">
+              <span class="close4">&times;</span>
+              <div id="imagensModal" >
+                  <img src="imagens/segundo-carrossel/apple/imac 01.gif" alt="" id="imagensMac">
+                  <img src="imagens/segundo-carrossel/apple/mac air.gif" alt="" id="imagensMac">
+                  <img src="imagens/segundo-carrossel/apple/macbookpro.gif" alt="" id="imagensMac">
+              </div>
+
+              <h4 id="titulo-modal">Linha Apple</h4>
+              <div class="modalTexto">                  
+                  <p>
+                      Na KLV Reverse, oferecemos uma linha completa de produtos Apple, incluindo o iMac, MacBook Air e MacBook Pro. Se você é um entusiasta da tecnologia da Apple ou está procurando por dispositivos premium que combinem design elegante com desempenho excepcional, nossa seleção atende às suas necessidades. Desde o poderoso iMac para produtividade em casa ou no escritório até o MacBook Air ultrafino e leve para mobilidade sem comprometer o desempenho, e o MacBook Pro, projetado para profissionais que exigem o máximo em potência e recursos, temos tudo o que você precisa para entrar no ecossistema Apple. Explore nossa gama de produtos Apple na KLV Reverse e eleve sua experiência tecnológica para o próximo nível.
+                  </p>
+              </div>
+
+          </div>
+    </nav>
+
+    <nav id="myModal5" class="modal">
+          
+          <div class="modal-content">
+              <span class="close5">&times;</span>
+              <div id="imagensModal" >
+                  <img src="imagens/segundo-carrossel/totem/totem01.gif" alt="" id="imagensTotem">
+                  <img src="imagens/segundo-carrossel/totem/totem03.gif" alt="" id="imagensTotem">
+                  <img src="imagens/segundo-carrossel/apple/macbookpro.gif" alt="" id="imagensTotem">
+              </div>
+
+              <h4 id="titulo-modal">Totens</h4>
+              <div class="modalTexto">                  
+                  <p>
+                      Na KLV, oferecemos um serviço especializado de personalização de totens de autoatendimento interativos, projetados para atender às necessidades exclusivas de cada cliente. Nossa equipe altamente qualificada trabalha em estreita colaboração com você para entender suas metas e requisitos específicos, desde o design até a implementação.
+
+                      Nossos totens são construídos com tecnologia de ponta, garantindo uma experiência de usuário intuitiva e eficiente. Eles podem ser personalizados com sua marca, cores e logotipos para garantir uma integração perfeita com sua identidade corporativa.
+                    
+                      Além disso, oferecemos uma ampla gama de recursos e funcionalidades personalizáveis, incluindo opções de pagamento, seleção de produtos, informações interativas, pesquisas de satisfação do cliente e muito mais.
+                    
+                      Seja para aprimorar a experiência do cliente, otimizar processos internos ou criar uma solução inovadora para o seu negócio, os totens de autoatendimento personalizados da KLV são a escolha ideal. Entre em contato conosco hoje mesmo para começar a projetar o seu.
+                  </p>
+              </div>
+
+          </div>
+    </nav>
+
+
+
+    <!-- BENEFICIOS -->
+
+    <a id="beneficios"></a>
+    <br>
+
+    <section class="containerCards">
+      <div class= "cardsBene">
+          
+          <div class="beneficios">
+            <h4>BENEFICIOS</h4>
+            <p>Com a locação terá economia de recurso, evitando despesas iniciais significativas. Poderá adquirir novos computadores ou troca conforme a demanda, evitando gastos desnecessários.  
+
+              Irá mantenha-se atualizado com as últimas tecnologias sem a preocupação de revender hardware antigo.  
+              
+              Oferecemos suporte técnico para minimizar tempo de inatividade e resolver problemas rapidamente, cuidamos da manutenção e reparos. 
+              
+              Com os pagamentos mensais proporcionam previsibilidade financeira, custos de locação podem ser dedutíveis de impostos, gerando economias fiscais.  
+              
+              Promovemos práticas sustentáveis ao reduzir o desperdício eletrônico e promover o reuso de dispositivos.  
+              
+              Quando terminar o contrato você pode optar por comprar o equipamento, e reduziremos uma porcentagem da sua locação no valor do produto.
+            </p>
+          </div>
+
+          <div class="beneficios">
+            <h4>LIXO ELETRÔNICO</h4>
+            <p>Quando o lixo eletrônico é descartado inadequadamente, ocorre a liberação de substâncias químicas nocivas no solo e na água. 
+              
+              Esses produtos químicos contaminam o solo, atingem os lençóis freáticos e podem chegar aos cursos d'água, comprometendo a qualidade e a disponibilidade de água potável. 
+
+              Além disso, a legislação também prevê penalidades para quem descarta eletrônicos de forma irregular, incluindo multas que variam de acordo com a gravidade da infração. 
+              
+              Portanto, é essencial estar ciente das obrigações legais e buscar alternativas sustentáveis para o descarte de eletrônicos. 
+            </p>
+          </div>
+      </div>
+    </section>  
+    
+  </main>
+    
+
+  <!-- FOOTER -->
+
+  <footer>
+      <a id="contato"></a>
+      
+      <!-- FOOTER -->
+      <nav id="footerMobile">
+        <div class="menu-rodape">
+            <div class="loja">
+                <ul>
+                    <li><b>KLV Reverse</b></li>
+                    <li><b>Contato:</b> (11)94370-6303</li>
+                    <li><b>Endereço:</b> Avenida Rio Branco, 316 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                        estacionamento Wipark (Av. Rio Branco, 312)</li>
+                </ul>
+            </div>
+
+            <div class="loja">
+                <ul>
+                    <li><b>KLV Notebooks</b></li>
+                    <li><b>Contato:</b> (11)9351-1214</li>
+                    <li><b>Endereço: </b> Avenida Rio Branco, 324 <br>Campos Eliseos - São Paulo/SP<br>Convênio com
+                        estacionamento Wipark (Av. Rio Branco, 312)</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="direitos">
+            <p><b><i>© 2024 KLV.com. Todos os direitos reservados</i></b></p>
+        </div>
+      </nav>
+
+  </footer>
+    
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+   
+</body>
+</html> 

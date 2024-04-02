@@ -1,0 +1,905 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  transition: background-color .5s;
+  background-color: #010326;  
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+}
+
+/* BOLINHA GRADIENTE */
+
+/* .gradiente {
+  position: absolute;
+  z-index: 0;
+  right: -25px;
+  top: -25px;
+  overflow: auto;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  background-image: radial-gradient(rgb(96, 119, 65), rgba(35, 156, 33, 0));       
+} */
+
+
+/* ESCONDER */
+
+#menuGrande {
+  display: none;
+}
+
+#tab {
+  display: none;
+}
+
+#carrosselDesktop {
+  display: none;
+}
+
+#menuDesktop {
+  display: none;
+}
+
+/* MODAL INICIAL */
+
+#enviar {
+  position: absolute;
+  left: 15%;
+  background-color: rgba(15, 236, 11 , 0.5);
+  color: #010326;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.input {
+  display: block;
+  /* background-color: rgba(1, 3, 38 ,0.2); */
+  border: solid 1px #0FEC0B;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+/* Estilo para cobrir a tela inteira */
+
+.modalInicial {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  color: white;
+  border: solid 1px #0FEC0B;
+  overflow: hidden;
+}
+
+#logo-form{
+ width: 65%;
+}
+
+#logo-formulario{
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+}
+
+/* Estilo para centralizar o conteúdo */
+
+.modal-conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #010326;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 1px #0FEC0B;
+}
+
+/* Estilo para o botão de fechar */
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+
+/* MENU MOBILE */
+
+#openNav{
+  z-index: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;  
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: -3px;
+  background-color: #010326;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-left: solid 3px #D9D9D9;
+  background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0) 50%, rgba(14, 235, 10, 1));
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #D9D9D9;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, #main span:hover{
+  color: #0FEC0B;
+  text-decoration: underline;  
+  margin: 0 20px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font-size: 36px;
+  margin-right: 50px; 
+}
+
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: margin-right .5s;
+  background-color:#010326;
+  color: #D9D9D9;
+  width: 100%;
+  font-size: 30px;
+}
+
+#main img {
+  min-width: 50%;
+  width: 50%;
+  margin-left: 5%;
+}
+
+#main span{
+  padding: 30px;
+}
+
+
+/* BOTÃO VOLTAR AO TOPO */
+
+.topo-btn {
+  position: fixed;
+  z-index: 3;
+  left: 85%;
+  bottom: 5%;
+  width: 35px;
+  height: 35px;
+  border: 1.5px solid #D9D9D9;
+  border-radius: 50%;  
+  background-color: #0a5e09;
+  color: #D9D9D9;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+
+/* CARROSSEL TOPO */
+
+.mySlides {
+  display: none;
+}
+
+#carrossel {
+ vertical-align: middle;
+ border-radius: 15px;
+}
+
+.slideshow-container1 {
+  width: 90%;
+  position: relative;
+  margin: 5% 5%;
+}
+
+.slideshow-container1 img{
+  width: 100%;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 10px 1px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 10%;
+}
+
+.active {
+  background-color: #0FEC0B;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* REDES SOCIAIS */
+
+.redesSociais {
+  position: fixed;
+  top: -50px;
+}
+
+#redes a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 8px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #FFF;
+  border-radius: 0 5px 5px 0;
+  text-align: end;
+  background-color: #0a5e09;
+}
+
+#redes img{
+  width: 20px;
+  height: 20px;
+}
+
+#redes a:hover {
+  left: -60px;
+  background-color: #0ebb0b;
+
+}
+
+#whatsapp {
+  top: 300px;  
+}
+
+#instagram {
+  top: 342px;
+}
+
+#email {
+  top: 384px;
+}
+
+/* IFRAME QUEM SOMOS */
+
+.somos{
+  margin: 10% 12%;
+  height: 250px;
+  background-color: #D9D9D9;
+  border: 2px solid #0FEC0B;
+  border-radius: 10px;
+  color: #000;
+  overflow: auto;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.somos::-webkit-scrollbar {
+  margin: 2px;
+  width: 5px;
+}
+
+.somos::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+.somos::-webkit-scrollbar-thumb {
+  background-color: #010326;
+  border-radius: 20px;
+}
+
+.somos h4{
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+
+/* ACORDEON SERVIÇOS */
+
+/* #titulo{
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  margin-top: 70px;
+  color: #D9D9D9;
+  padding: 20px;
+} */
+
+.acordeon {
+  margin: 15% 15%;
+}
+
+.accordion, .panel {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+}
+
+.accordion {
+  background-color: #010326;
+  color: #D9D9D9;
+  cursor: pointer;
+  border: 1px solid #0FEC0B;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: 0.4s;  
+  font-weight: bold;
+  font-family: "Alata", sans-serif;
+}
+
+.active, .accordion:hover {
+  background-color: #0FEC0B; 
+  color: #010326;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #D9D9D9;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  font-size: 13px;
+  font-family: "Alata", sans-serif;
+  display: none;
+  background-color: #010326;
+  overflow: hidden;
+  color: #D9D9D9;
+  border: 1px solid #0FEC0B; 
+}
+
+
+/* CARROSSEL DE CARDS */
+
+#tituloEquip {
+  text-align: center;
+  margin-top: 25%;
+  color: #D9D9D9;
+  /* padding: 20px; */
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #010326;
+  /* padding: 10px;   */
+}
+
+.slideshow-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow-container {
+  margin: 10% 10%;
+  display: flex;  
+  overflow: auto;
+  height: 230px;
+}
+
+.cardCarrossel {
+  padding: 5px;
+  border: 2px solid #0FEC0B;
+  border-radius: 20px;
+  background-color: #010326;
+  margin: 1.5%;
+}
+
+#imagemCarrossel img {
+  margin: 10px;
+  height: 120px;
+  width: 100px;
+  border: 1px solid #010326;  
+  border-radius: 10px; 
+  object-fit: cover;
+}
+ 
+.cardCarrossel p {
+    color: #0FEC0B;
+    text-align: center;
+    font-family: "Alata", sans-serif;
+    padding-top: 20px;
+}
+ 
+.cardCarrossel:hover, .cardCarrossel:focus {
+    text-decoration: underline #0FEC0B;
+    background-image: linear-gradient(to top, rgba(14, 235, 10, 0) 15%, rgba(14, 235, 10, 1));
+    cursor: pointer;
+}
+
+
+/* MODAL */
+
+/* Fundo do Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 150px;
+  padding-left: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: auto; 
+}
+ 
+/* Modal Conteudo */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #010326;
+  margin: 5%;
+  padding: 5%;
+  border: 1px solid #0FEC0B;
+  width: 70%;
+  border-radius: 20px; 
+  align-items: center;
+}
+ 
+/* Botão de fechar */
+.close1, .close2, .close3, .close4, .close5 {
+  color: #0FEC0B;
+  /* float: right; */
+  font-size: 28px;
+  /* font-weight: bold; */
+  position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+ 
+}
+ 
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+#imagensDesk ,#imagensAces ,#imagensNote,#imagensMac,#imagensTotem{
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  border: 1px #0FEC0B solid;
+  margin: 5px;
+ 
+}
+ 
+.modalTexto {
+  width: 200px;
+  height: 90px;
+  margin: 10px;
+  background-color: #D9D9D9;
+  border: 2px solid #0FEC0B;
+  border-radius: 10px;
+  color: #000;
+  overflow: auto;
+  padding: 8px;
+  font-size: 10px;
+ 
+}
+ 
+#imagensModal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+ 
+h4{  
+  align-items: center;
+  text-decoration: bold;
+  font-family: "Alata", sans-serif;
+  padding: 2% 0;
+}
+ 
+#titulo-modal {  
+  color: #0FEC0B;
+  align-items: center;
+  text-align: center;
+  margin-top: 18%;
+  font-family: "Alata", sans-serif;
+  border-top: solid 2px #0FEC0B;
+  border-bottom: solid 2px #0FEC0B;
+}
+
+#titulos {  
+  color: #0FEC0B;
+  align-items: center;
+  text-align: center;
+  margin-top: 7%;
+  font-family: "Alata", sans-serif;
+  border: solid 2px #0FEC0B;
+  
+}
+
+/* BENEFICIOS */
+
+.containerCards {
+  margin: 0 5%;
+}
+
+.cardsBene{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.beneficios{
+  margin: 15% 1%;
+  width: 50%;
+  height: 200px;
+  background-color: #D9D9D9;
+  border: 2px solid #0FEC0B;
+  border-radius: 10px;
+  color: #000;
+  overflow: auto;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.beneficios::-webkit-scrollbar {
+  margin: 2px;
+  width: 3px;
+}
+
+.beneficios::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+.beneficios::-webkit-scrollbar-thumb {
+  background-color: #010326;
+  border-radius: 20px;
+}
+
+.beneficios h4{
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+
+/* FOOTER */
+
+footer {
+  margin-top: 10%;
+  height: 20%;
+  color: #fff;
+}
+
+#footerMobile {
+  background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0), rgba(14, 235, 10, 1));
+  padding-bottom: 15px;
+}
+
+.menu-rodape {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.loja ul {
+  list-style: none;
+  font-size: 12px;
+  padding: 10px;
+
+}
+
+.loja {
+  margin: 5px 0 0 22px;
+  padding: 5px;
+}
+
+.direitos {
+  margin-top: 10%;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+  @media screen and (min-width: 700px) {
+
+    
+    /* ESCONDER */
+
+    #menuMobile {
+    display: none;
+    }
+
+    #acordeonMobile {
+      display: none;
+    }
+
+    /* .containerCarrossel {
+      display: none;
+    } */
+
+
+
+    /* MOSTRAR DESKTOP */
+
+
+    /* MENU DESKTOP */
+    
+    #menuDesktop {
+      display: block;
+    }
+
+    .menu { 
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background-color: #010326;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 5000;
+    }
+
+    .menu a {
+      text-decoration: none;
+    }
+        
+    #logo {
+      position: relative;
+      left: 15px;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    
+    ul {
+        display: flex;
+        margin: auto;
+        list-style: none;
+        padding: 15px;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    
+    .botao {
+      font-size: 12px;
+      width: 100px;
+      text-align: center;
+      background-color: #4A6D1D;
+      margin: 4px;
+      padding: 10px 5px;
+      border-radius: 20px;
+      font-family: 'Franklin Gothic Medium';
+      color: white;
+    }
+    
+    .botao:hover {
+        background-color: #0FEC0B;
+    }
+
+
+    /* CARROSSEL AUTOMÁTICO */
+
+    .carrosselMobile {
+      margin-top: 140px;
+    }
+
+
+    /* TAB */
+
+    #tab {
+      display: block;
+    }
+
+    .containerTab {
+      width: 70%;
+      margin: 10% 15%;
+    }
+
+    /* Estilo*/
+    .tab {
+      overflow: hidden;
+      border: 2px solid #0FEC0B;
+      background-color: #010326;
+    }
+    
+    /* Botões tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    .tab button:hover {
+      background-color: #0FEC0B;
+      color: #010326;
+    }
+    
+    .tab button.active {
+      background-color: #0FEC0B;
+      color: #010326;
+    }
+    
+    /* Tab conteudo */
+    #locacao {
+      display: block;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 70px 30px;
+      border: 2px solid #0FEC0B;
+      border-top: none;
+      background-color: #010326;
+      color : white;
+    }
+    
+    .tablinks{
+      color: #0FEC0B;
+    }
+
+    
+
+    /* MODAL INICIAL */
+
+    .input {
+      width: 90%;
+      height: 25px;
+      margin: 2% 5%;
+    }
+
+    .modal-conteudo {
+      padding: 3%;
+    }
+
+
+    /* REDES */
+
+    #redes a {    
+      background-color: #010326;
+    }
+
+    #redes a:hover {
+      background-color: #010326;
+    }  
+
+
+    /* MODAL CARROSSEL */
+
+    .modal {
+      z-index: 20000;
+    }
+
+    .modal-content {
+      padding: 30px;
+      width: 500px;
+      height: 400px;
+      margin: auto;
+    }
+
+    .modalTexto {
+      width: 450px;
+      height: 250px;
+      font-size: 12px;
+    }
+
+    #titulo-modal {
+      margin: 30px auto;
+      font-size: 30px;
+    }
+
+    #imagensNote, #imagensDesk, #imagensAces, #imagensMac, #imagensTotem {
+      width: 130px;
+      height: 130px;
+      /* object-fit: cover; */
+    }
+
+    .close1, .close2, .close3, .close4, .close5 {
+      top: 100px;
+      right: 150px;
+    }
+
+
+    /* CARDS BENEFICIOS */
+
+    .beneficios {
+      height: 400px;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background-image: linear-gradient(to bottom, rgba(14, 235, 10, 0), rgba(14, 235, 10, 1));
+      color: #fff;
+    }
+
+    .direitos {
+      margin-top: 0;
+    }
+
+    .loja ul {
+      display: block;
+    }
+
+  }
+
+@media screen and (min-width: 900px){
+
+  .body {
+    max-width: 1000px;
+  }
+
+  .container-main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* CARROSSEL TOPO */
+
+  .carrosselMobile {
+    margin-top: 230px;
+  }
+
+  /* MENU */
+
+  .menu #logo {
+   width: 55%;
+   margin-left: 50px;   
+  } 
+
+
+  .botao {
+    width: 110px;
+    margin: 5px;
+    text-align: center;
+  }
+
+    
+}
